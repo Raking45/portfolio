@@ -1,0 +1,138 @@
+/* Table Layout */
+.resume-table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 1200px;
+  height: auto;
+  margin: 1rem auto;
+}
+
+/* Columns */
+.left-column {
+  width: 40%;
+  vertical-align: top;
+  padding: 1rem;
+  background-color: var(--bg-secondary-color);
+  color: var(--white);
+}
+
+.right-column {
+  width: 60%;
+  vertical-align: top;
+  padding: 1rem;
+  background-color: var(--bg-secondary-color);
+  color: var(--white);
+}
+
+/* Header Section */
+.name-block {
+  text-align: center;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1.5rem;
+  
+}
+
+.s1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.s2 {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  margin-top: 0.5rem;
+}
+
+/* Headings */
+.s3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  border-bottom: 2px solid var(--secondary);
+  padding-bottom: 0.2rem;
+  margin-top: 1.5rem;
+  letter-spacing: 2px;
+}
+
+/* Labels and Subtext */
+.s4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.s5 {
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: var(--secondary);
+}
+
+.s6 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  text-align:left;
+  line-height: 1.25em;
+  letter-spacing: 1px;
+}
+
+.s7, .s7:visited {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.s7:hover {
+  text-decoration: underline;
+}
+
+/* Education and Misc Sections */
+.s9 {
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--secondary);
+  letter-spacing: 2px;
+}
+
+ul {
+  margin-top: .5rem;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+/* Footer */
+.reference {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--black);
+  font-size: 1rem;
+  color: var(--white);
+}
+
+/* Responsive (Optional) */
+@media (max-width: 768px) {
+  .resume-table, .resume-table tr, .resume-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .name-block {
+    padding: 1.5rem;
+  }
+}
