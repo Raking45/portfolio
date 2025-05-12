@@ -136,3 +136,20 @@ ul li {
     padding: 1.5rem;
   }
 }
+
+/* Print Media Query */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .resume-table {
+    max-width: 100%;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}

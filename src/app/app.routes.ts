@@ -6,6 +6,7 @@ import { BlogComponent } from './blog/blog.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { MessagesComponent } from './admin/messages/messages.component';
 
 export const routes: Routes = [
   {
@@ -39,5 +40,9 @@ export const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'admin/messages',
+    component: MessagesComponent
   }
 ];

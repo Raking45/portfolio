@@ -1,4 +1,112 @@
-p {
-  color: #fff;
-  padding: 100px;
+/* General Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 8rem;
+}
+
+/* Hero Section */
+.about-hero {
+  padding: 1rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid var(--secondary);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.section-subtitle {
+  font-size: 1.4rem;
+  color: var(--secondary);
+}
+
+/* Section Headings */
+.about-section {
+  margin-top: 1rem;
+}
+
+.section-heading {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  border-left: 4px solid var(--secondary);
+  padding-left: 12px;
+}
+
+/* Paragraphs */
+.about-section {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+/* Values / Principles */
+.values-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.values-list li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.4rem;
+  color: var(--secondary);
+  margin-left: 50px;
+}
+
+/* Timeline */
+.timeline {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.timeline li {
+  position: relative;
+  padding-left: 20px;
+  margin-left: 50px;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--primary);
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 0;
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+/* Behind the Scenes */
+.behind-the-scenes-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-photo {
+  max-width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* CTA */
+.cta-section {
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--white);
+}
+
+.cta-button {
+  text-align: center;
 }

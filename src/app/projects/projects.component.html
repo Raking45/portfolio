@@ -1,1 +1,30 @@
-<p>projects works!</p>
+<!-- Projects Section -->
+<section class="projects-section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">Here are projects that were built to solve a specific problem or explore new technologies.</p>
+
+    <div class="projects-grid">
+      <div *ngFor="let project of projects" class="project-card">
+        <img [src]="project.imageUrl" [alt]="project.title" class="project-image" />
+        <div class="project-header">
+          <h3 class="project-title">{{ project.title }}</h3>
+          <p class="project-description">{{ project.description }}</p>
+          <div class="project-tech">
+            <span *ngFor="let tech of project.tech" class="tech-tag">{{ tech }}</span>
+          </div>
+          <div class="project-links">
+            <a *ngFor="let link of project.links" [href]="link.url" class="project-link" target="_blank" rel="noopener">
+              <img [src]="link.icon" [alt]="link.label" />
+              {{ link.label }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="cta-buttons cta-services-button" aria-label="See Full Services Button">
+      <a href="https://github.com/Raking45" style="--clr:#0072ff"><span>View All Projects on GitHub</span><i></i></a>
+    </div>
+  </div>
+</section>

@@ -1,1 +1,20 @@
-<p>blog works!</p>
+<!-- Blog Section -->
+<section class="blog-section">
+  <div class="container">
+    <h2 class="section-title">Blog</h2>
+    <p class="section-subtitle">Insights, tutorials, and stories from my development journey.</p>
+
+    <div class="blog-grid">
+      <div *ngFor="let post of blogPosts" class="blog-card">
+        <img [src]="post.imageUrl" [alt]="post.title" class="blog-image" />
+        <div class="blog-content">
+          <h3 class="blog-title">{{ post.title }}</h3>
+          <p class="blog-snippet">{{ post.snippet }}</p>
+          <div class="cta-buttons cta-services-button" aria-label="Read More">
+            <a [routerLink]="post.link" style="--clr:#0072ff"><span>Read More</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

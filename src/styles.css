@@ -1,6 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 /* Color Variables */
 :root {
@@ -14,6 +12,16 @@
   --border-color: #00fff7;
 }
 
+/*:root {
+  --primary: #00adb5;
+  --secondary: #393e46;
+  --accent: #f8b500;
+  --background: #222831;
+  --text: #eeeeee;
+  --error: #ff4d4d;
+  --success: #3ed598;
+}*/
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +29,7 @@
 }
 
 html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   background-color: var(--white);
   color: #333333;

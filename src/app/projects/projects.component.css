@@ -1,4 +1,119 @@
-p {
+/* General Styles */
+.projects-section {
+  padding: 60px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Title & Subtitle */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.section-subtitle {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--secondary);
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Projects Card */
+.project-card {
+  background-color: #191919;
+  height: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  border: 3px solid var(--primary);
+  box-shadow: 4px 4px 8px var(--secondary);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #000;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+/* Tech Tags */
+.project-tech {
+  margin-bottom: 15px;
+}
+
+.tech-tag {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin: 5px 5px 0 0;
+}
+
+/* Project Links */
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #007acc;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-link img {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.project-link:hover {
+  background-color: #007acc;
   color: #fff;
-  padding: 100px;
+}
+
+/* View More Button */
+.cta-buttons {
+  text-align: center;
 }
