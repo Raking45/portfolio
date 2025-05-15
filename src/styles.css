@@ -68,7 +68,7 @@ a {
 
 .cta-buttons a {
   position: relative;
-  background: var(--white);
+  background: var(--primary);
   color: var(--white);
   text-decoration: none;
   text-transform: uppercase;

@@ -1,6 +1,7 @@
 <!-- Projects Section -->
 <section class="projects-section">
   <div class="container">
+    
     <h2 class="section-title">Projects</h2>
     <p class="section-subtitle">Here are projects that were built to solve a specific problem or explore new technologies.</p>
 
@@ -10,15 +11,16 @@
         <div class="project-header">
           <h3 class="project-title">{{ project.title }}</h3>
           <p class="project-description">{{ project.description }}</p>
-          <div class="project-tech">
-            <span *ngFor="let tech of project.tech" class="tech-tag">{{ tech }}</span>
-          </div>
-          <div class="project-links">
-            <a *ngFor="let link of project.links" [href]="link.url" class="project-link" target="_blank" rel="noopener">
-              <img [src]="link.icon" [alt]="link.label" />
-              {{ link.label }}
-            </a>
-          </div>
+        </div>
+        <div class="project-tech">
+          <span *ngFor="let tech of project.tech" class="tech-tag" [ngStyle]="{ 'background-color': techColors[tech], color: '#fff' }" >
+            <i [class]="techIcons[tech]"></i>{{ tech }}</span>
+        </div>
+        <div class="project-links">
+          <a *ngFor="let link of project.links" [href]="link.url" class="project-link" target="_blank" rel="noopener">
+            <i [class]="linkIcons[link.label]"></i>
+            {{ link.label }}
+          </a>
         </div>
       </div>
     </div>

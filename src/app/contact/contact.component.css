@@ -139,6 +139,8 @@ button:hover {
   color: var(--white);
   font-weight: 700;
   letter-spacing: 2px;
+  -webkit-text-stroke-color: var(--primary);
+  -webkit-text-stroke-width: 1px;
 }
 
 .phone img {
@@ -154,6 +156,7 @@ address {
   text-align: center;
   line-height: 1.3em;
   letter-spacing: 1px;
+  color: var(--secondary)
 }
 
 address::first-line {

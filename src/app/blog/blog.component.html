@@ -6,9 +6,10 @@
 
     <div class="blog-grid">
       <div *ngFor="let post of blogPosts" class="blog-card">
-        <img [src]="post.imageUrl" [alt]="post.title" class="blog-image" />
+        <img [src]="post.imageUrl" [alt]="post.imageUrlAlt" class="blog-image" />
         <div class="blog-content">
           <h3 class="blog-title">{{ post.title }}</h3>
+          <h4 class="blog-author">{{ post.author }}</h4>
           <p class="blog-snippet">{{ post.snippet }}</p>
           <div class="cta-buttons cta-services-button" aria-label="Read More">
             <a [routerLink]="post.link" style="--clr:#0072ff"><span>Read More</span></a>
