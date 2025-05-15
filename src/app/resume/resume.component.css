@@ -25,12 +25,36 @@
 }
 
 /* Header Section */
+.name-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .name-block {
   text-align: center;
   background-color: var(--black);
   color: var(--white);
   padding: 1.5rem;
   
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon-btn:hover {
+  color: var(--secondary);
 }
 
 .s1 {
@@ -140,16 +164,48 @@ ul li {
 /* Print Media Query */
 @media print {
   body {
-    background: white;
-    color: black;
+    background: white !important;
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    font-size: 12pt;
   }
 
   .resume-table {
     max-width: 100%;
+    border: none;
   }
 
-  a {
-    color: black;
-    text-decoration: none;
+  .no-print, .no-print * {
+    display: none !important;
+  }
+
+  a[href]:after {
+    content: "" !important;
+  }
+
+  .left-column, .right-column, .name-block {
+    page-break-inside: avoid;
+  }
+
+  .name-block,
+  .left-column,
+  .right-column,
+  .references {
+    background: var(--white) !important;
+    color: black !important;
+  }
+
+  .s1, .s2, .s3, .s5, .s6, .s9 {
+    color: black !important;
+  }
+
+  .resume-table td {
+    padding: 0.5rem;
+  }
+
+  ul {
+    margin: 0.5rem 0 0.5rem 1rem;
+    padding-left: 1rem;
   }
 }

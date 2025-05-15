@@ -29,6 +29,12 @@
   margin-top: 1rem;
 }
 
+.section-heading-main {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
 .section-heading {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;

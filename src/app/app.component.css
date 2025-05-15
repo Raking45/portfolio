@@ -199,3 +199,10 @@
     display: flex;
   }
 }
+
+@media print {
+  .no-print-header,
+  .no-print-footer {
+    display: none;
+  }
+}
