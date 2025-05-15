@@ -38,7 +38,7 @@
 .contact-info {
   flex: 1 1 50%;
   padding: 2rem;
-  background-image: url('/assets/images/laptop.jpg');
+  background-image: url('/images/laptop.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
