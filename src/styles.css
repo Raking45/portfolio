@@ -141,7 +141,7 @@ a {
 
 /* Contact Page */
 .contact-info {
-  background-image: url('/assets/images/laptop.jpg');
+  background-image: url('/public/assets/images/laptop.jpg');
 }
 
 .contact-info::before {
