@@ -4,62 +4,15 @@
     <p class="section-subtitle">Custom full-stack development tailored to your business goals. Utilizing end-to-end web solutions to bring your vision to life.</p>
     
     <div class="services-grid">
-
-      <!-- Service 1 -->
-      <div class="service-card">
+      <div class="service-card" *ngFor="let service of services">
         <div class="service-icon">
-          <i class="fas fa-code"></i>Web Applications
+          <i [class]="service.icon"></i>{{ service.label }}
         </div>
-        <h3 class="service-title">Custom Web Applications</h3>
-        <p class="service-description">Built from scratch using modern technologies like React, Angular, Node.js, MySQL, and MongoDb to meet your exact needs.</p>
-      </div>
-
-      <!-- Service 2 -->
-      <div class="service-card">
-        <div class="service-icon">
-          <i class="fas fa-shopping-cart"></i>E-commerce
-        </div>
-        <h3 class="service-title">E-commerce Development</h3>
-        <p class="service-description">Launch scalable, secure, and responsive online stores using platforms like Shopify, WooCommerce, or custom stacks.</p>
-      </div>
-
-      <!-- Service 3 -->
-      <div class="service-card">
-        <div class="service-icon">
-          <i class="fas fa-plug"></i>APIs
-        </div>
-        <h3 class="service-title">API Development & Integration</h3>
-        <p class="service-description">Design and implement RESTful or GraphQL APIs, and connect third-party services like Stripe, Twilio, and more.</p>
-      </div>
-
-      <!-- Service 4 -->
-      <div class="service-card">
-        <div class="service-icon">
-          <i class="fas fa-mobile-alt"></i>Frontend Design
-        </div>
-        <h3 class="service-title">Responsive Frontend Design</h3>
-        <p class="service-description">Beautiful, mobile-first UI/UX built with HTML, CSS, Tailwind, and JavaScript frameworks.</p>
-      </div>
-
-      <!-- Service 5 -->
-      <div class="service-card">
-        <div class="service-icon">
-          <i class="fas fa-cloud-upload-alt"></i>Cloud Hosting
-        </div>
-        <h3 class="service-title">Cloud Deployment</h3>
-        <p class="service-description">Deploy and scale your app on AWS, Vercel, Netlify, or DigitalOcean with CI/CD and serverless setups.</p>
-      </div>
-
-      <!-- Service 6 -->
-      <div class="service-card">
-        <div class="service-icon">
-          <i class="fas fa-shield-alt"></i>Security & Support
-        </div>
-        <h3 class="service-title">Maintenance & Security</h3>
-        <p class="service-description">Ongoing support, updates, backups, and best practices for performance and protection.</p>
+        <h3 class="service-title">{{ service.title }}</h3>
+        <p class="service-description">{{ service.description }}</p>
       </div>
     </div>
-    <div class="cta-buttons cta-services-button" aria-label="See Full Services Button">
+    <div class="cta-buttons cta-services-button" aria-label="Navigate to Contact page to start a project">
       <a routerLink="/contact" style="--clr:#0072ff"><span>Let's Work Together</span><i></i></a>
     </div>
   </div>

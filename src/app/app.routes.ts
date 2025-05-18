@@ -13,6 +13,7 @@ import { Article3Component } from './pages/article3/article3.component';
 import { Article4Component } from './pages/article4/article4.component';
 import { Article5Component } from './pages/article5/article5.component';
 import { Article6Component } from './pages/article6/article6.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 export const routes: Routes = [
   {
@@ -74,5 +75,9 @@ export const routes: Routes = [
   {
     path: 'pages/article6',
     component: Article6Component
+  },
+  {
+    path:'**',
+    component: NotFoundComponent
   }
 ];

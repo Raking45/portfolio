@@ -38,19 +38,10 @@
 .contact-info {
   flex: 1 1 50%;
   padding: 2rem;
-  background-image: url('/public/assets/images/laptop.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-}
-
-.contact-info::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: -1;
 }
 
 h1 {

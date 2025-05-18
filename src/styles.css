@@ -138,3 +138,16 @@ a {
   width: 20px;
   left: 80%;
 }
+
+/* Contact Page */
+.contact-info {
+  background-image: url('/assets/images/laptop.jpg');
+}
+
+.contact-info::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0 , 0, 0.9);
+  z-index: -1;
+}
