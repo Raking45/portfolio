@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 interface Service  {
   icon: string;
@@ -9,7 +10,7 @@ interface Service  {
 };
 @Component({
   selector: 'app-services',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './services.component.html',
   styleUrl: './services.component.css'
 })
